@@ -35,7 +35,7 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   switchLang() {
-    if (this.translateService.currentLang == "en") {
+    if (this.translateService.currentLang === "en") {
       this.translateService.use("fr");
     } else {
       this.translateService.use("en");
